@@ -139,7 +139,7 @@ const ChatBotWidget = ({
           {messages.map((msg, index) => (
             <li
               key={index}
-              className={`chat ${
+              className={`${styles.chat} ${
                 msg.role === "user" ? styles.outgoing : styles.incoming
               }`}
             >
