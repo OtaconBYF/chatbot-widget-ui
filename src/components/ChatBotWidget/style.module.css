@@ -218,7 +218,6 @@ body.showChatbot .chatbot {
 .chatbox .outgoing {
     margin: 20px 0;
     justify-content: flex-end;
-    font-size: 0.8em;
 }
 
 .chatbox .chat p {
