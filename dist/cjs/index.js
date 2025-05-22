@@ -133,7 +133,7 @@ const ChatBotWidget = ({ callApi, chatbotName = "Chatbot", isTypingMessage = "Ty
                 React.createElement("h2", null, chatbotName),
                 React.createElement("span", { className: "close-btn material-symbols-outlined", onClick: toggleChatbot }, "close")),
             React.createElement("ul", { className: styles.chatbox, ref: chatboxRef },
-                messages.map((msg, index) => (React.createElement("li", { key: index, className: `chat ${msg.role === "user" ? styles.outgoing : styles.incoming}` },
+                messages.map((msg, index) => (React.createElement("li", { key: index, className: `${styles.chat} ${msg.role === "user" ? styles.outgoing : styles.incoming}` },
                     msg.role !== "user" && (React.createElement("span", { className: "material-symbols-outlined" }, botIcon)),
                     React.createElement("p", Object.assign({ style: msg.role === "assistant"
                             ? botFontStyle
