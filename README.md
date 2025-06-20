@@ -188,6 +188,8 @@ npm publish --access public
 
 ## Update dist
 
+Note: Only after updating dist content can other project receive updates
+
 ```bash
 nvm use 16
 
